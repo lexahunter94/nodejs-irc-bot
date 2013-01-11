@@ -5,7 +5,7 @@ global.net = require("net");
 global.vm = require("vm");
 global.util = require("util");
 global.database = new Object();
-irc.bot = new irc.Client("irc.rusnet.ru", "JS", {port: 6660, password: "alexcool6786", userName: "js", realName: "JavaScript Programming Bot", channels: ["#javascript"]});
+irc.bot = new irc.Client("irc.rusnet.ru", "JS", {port: 6660, password: null, userName: "js", realName: "JavaScript Programming Bot", channels: ["#javascript"]});
 
 irc.bot.addBan = function(nick) {
 	if (irc.bot.checkBan(nick)) return false;
